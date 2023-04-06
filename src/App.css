@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #fbf3ff;
+}
+ 
+.container{
+    position: absolute;
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    transform:translate(-50% , -50%);
+    top:50%;
+    left:50%;
+}
+.row{
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myCard{
+    background: #fff;
+    position: relative;
+    height: 500px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px ,10px,40px,-10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px ,10px,40px,-10px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 40px -10px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.myRightCtn header{
+    color: #fff;
+    font-size: 44px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.box{
+    position: relative;
+    margin: 20px;
+    margin-bottom: 30px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myLeftCtn .myInput{
+    width: 230px;
+    border-radius: 25px;
+    padding: 9px;
+   
+    border: none;
+    -webkit-box-shadow: 0px ,10px,40px,-10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px ,10px,40px,-10px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 40px -10px rgb(211, 8, 207);
+
+
+}
+
+.myLeftCtn .myInput:focus{
+    outline: none;
+    background: linear-gradient(45deg, #f046ff,#9b00e8);
+    color: #fff;
+}
+
+
+.form-group{
+    margin: 2.5px
+}  
+
+
+.myRightCtn{
+    position: relative;
+    background-image  : linear-gradient(45deg, #f046ff,#9b00e8);
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(192, 192, 192);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myLeftCtn{
+    position: relative;
+    padding: 25px;
+    height: 100%;
+    border-radius: 25px;
+    background: #fff;
+    padding-left: 50px;
+    padding-top: 90px;
+}
+.myLeftCtn header{
+    color:blueviolet;
+    padding-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.myLeftCtn .butt{
+    background: linear-gradient(45deg,#bb36fd,#9b00e8);
+    width: 230px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 15px;
+    -webkit-box-shadow: 0px ,10px,40px,-10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px ,10px,40px,-10px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 40px -10px rgb(211, 8, 207);
+   
+}
+.myLeftCtn .butt:hover{
+    background: linear-gradient(45deg,#c85bff,#b726ff);
+}
+
+.myLeftCtn .butt:focus{
+    outline: none;
+}
+
+
+   .butt_out{
+    background:transparent;
+    width: 120px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 15px;
+    color: #fff;
+    
+}
+.butt_out:hover{
+    background-color: #fff;
+    color: black;
 }
